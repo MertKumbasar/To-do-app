@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do App</title>
+</head>
+<body>
+    <h1 class="title">To-Do App</h1>
+
+    <form class="task-form" action="/addTask" method="POST">
+        <input class="task-input" type="text" name="description" placeholder="Enter task description" required>
+        <button class="add-button" type="submit">Add Task</button>
+    </form>
+
+    <ul class="task-list">
+        <% tasks.forEach((task) => { %>
+            <li class="task-item">
+                <%= task.description %>
+                <form action="/delete/<%= task.id %>" method="POST" class="delete-form">
+                    <button class="delete-button" type="submit">Delete</button>
+                </form>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
