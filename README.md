@@ -1,6 +1,6 @@
 # To-Do App using Node.js, Express, and EJS
 
-This is a simple To-Do App built with Node.js, Express, and EJS. It allows you to create, update, and delete tasks in your to-do list. Follow the instructions below to get started.
+This is a simple To-Do App built with Node.js, Express, and EJS. It allows you to create and delete tasks in your to-do list. Follow the instructions below to get started.
 
 ## Installation
 
